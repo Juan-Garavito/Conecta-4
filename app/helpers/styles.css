@@ -1,0 +1,118 @@
+*{
+    box-sizing: none;
+    padding: 0;
+    margin: 0;
+    cursor: url("../assets/cursor.png");
+}
+
+.content{
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(7, 0.5fr);
+    width: 90%;
+    height: 100%;
+    margin: 1% auto;
+    padding: 10px 15px;
+    box-shadow: rgb(0, 229, 255) 0px 0px 50px, rgb(0, 0, 0) 0px 0px 50px;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+
+.content_column{
+    display: grid;
+    row-gap:5px;
+    width: -100%;
+    height: 100%;
+}
+
+.celda{
+    border-radius: 50%;
+    width: 170px;
+    height: 90px;
+    box-shadow: rgba(75, 26, 84, 0.472) 0px 0px 5px;
+    background: white;
+}
+
+.content_column:hover{
+    background: rgb(113 3 169);
+    padding: 4px 15px 4px 15px;
+    margin: 0px 2px 0px 2px;
+    border-radius: 20px;
+    cursor: url("../assets/cursor.png"), auto;
+}
+
+.player1{
+    width: 100%;
+    height: 100%;
+    background-color: #00a6ff;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.75,-0.08,.26,1.02);
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes aparicion {
+    from {transform: translateY(-500px);}
+    to {transform: translateY(0);}
+  }
+
+
+.player2{
+    width: 100%;
+    height: 100%;
+    background-color: #ff0037;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.75,-0.08,.26,1.02);
+    animation-fill-mode: forwards;
+}
+
+.ganador{
+    width: 270px;
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    background-color: rgb(0 81 116);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 49px;
+    color: white;
+    border-radius: 10px;
+    top: 20%;
+    left: 40%;
+}
+
+.fallo{
+    width: 300px;
+    height: 25px;
+    position: absolute;
+    display: none;
+    margin: 0 auto;
+    background-color: rgba(255, 0, 68, 0.712);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+    top: 90%;
+    left: 40%;
+}
+
+.ocultar{
+    animation-name: desaparecer;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.75,-0.08,.26,1.02);
+    animation-fill-mode: forwards;
+}
+
+.mostrar{
+    display: block;
+}
+
+@keyframes desaparecer {
+    from {background-color: rgba(255, 0, 68, 0.712); display: block; color:black}
+    to {background-color: rgba(255, 0, 68, 0.03); display: none; color: rgba(0, 0, 0, 0.081);}
+  }
