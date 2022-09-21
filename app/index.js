@@ -1,4 +1,4 @@
-import { Manager } from "./components/Manager.js"
+import { Manager } from "./components/Manager"
 import {Players} from "./components/Players.js"
 
 const celdasId = ["col1","col2","col3","col4","col5","col6","col7",
