@@ -22,7 +22,7 @@ export class Manager{
        
         
         if(column == undefined || column == null){
-            Alerts({mensaje: "selecciona una Columna", id: ".fallo", ocultar: true, sound: new Audio("./assets/music/negative_beeps-6008.mp3")})
+            Alerts({mensaje: "selecciona una Columna", id: ".fallo", ocultar: true, sound: new Audio("./app/assets/music/negative_beeps-6008.mp3")})
             return
         }            
           
@@ -35,7 +35,7 @@ export class Manager{
         });
 
         if(celda == undefined || celda == null ){
-            Alerts({mensaje: "Columna Llena", id: ".fallo", ocultar: true, sound: new Audio("./assets/music/negative_beeps-6008.mp3") })
+            Alerts({mensaje: "Columna Llena", id: ".fallo", ocultar: true, sound: new Audio("./app/assets/music/negative_beeps-6008.mp3") })
             return
         }
 
