@@ -11,7 +11,7 @@ const celdas = Array.apply(null, document.querySelectorAll(".celda"));
 const player1 = new Players({id:"player1"})
 const player2 = new Players({id:"player2"})
 const manager = new Manager({turno: true, celdas: celdas, celdasId: celdasId})
-const soundFicha = new Audio("./assets/music/explosion-de-fichas-de-ajedrez-98455.mp3")
+const soundFicha = new Audio("./app/assets/music/explosion-de-fichas-de-ajedrez-98455.mp3")
 
 
 
